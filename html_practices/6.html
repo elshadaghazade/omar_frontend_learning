@@ -1,56 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>🍕 Build Your Own Pizza!</title>
+  <title>Simple Form</title>
 </head>
 <body>
-  <h1>🍕 Welcome to My Pizza Shop! 🍕</h1>
+  <h1>Contact Form</h1>
 
-  <p>Hey there, pizza lover! Let's create your perfect pizza.</p>
+  <form>
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
 
-  <h2>Choose Your Crust:</h2>
-  <ul>
-    <li>Thin Crust (Crunchy!)</li>
-    <li>Thick Crust (Soft & fluffy)</li>
-    <li>Cheese-filled Crust (Extra yummy!)</li>
-  </ul>
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
 
-  <h2>Favorite Toppings:</h2>
-  <ol>
-    <li>Pepperoni 🍖</li>
-    <li>Cheese 🧀</li>
-    <li>Tomatoes 🍅</li>
-    <li>Olives 🫒</li>
-    <li>Pineapple 🍍 (for brave pizza chefs!)</li>
-  </ol>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
 
-  <h2>Pizza Chef Gallery 👨‍🍳👩‍🍳:</h2>
+    <label>Choose your favorite fruit:</label><br>
+    <select name="fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="grape">Grape</option>
+    </select><br><br>
 
-  <table border="1">
-    <tr>
-      <th>Chef</th>
-      <th>Specialty</th>
-      <th>Photo</th>
-    </tr>
-    <tr>
-      <td>Chef Luigi</td>
-      <td>Pepperoni Master</td>
-      <td><img src="https://robohash.org/luigi?size=150x150" alt="Chef Luigi"></td>
-    </tr>
-    <tr>
-      <td>Chef Anna</td>
-      <td>Veggie Specialist</td>
-      <td><img src="https://robohash.org/anna?size=150x150" alt="Chef Anna"></td>
-    </tr>
-  </table>
-
-  <h2>Today's Pizza Joke 😂:</h2>
-  <blockquote>
-    What does a pizza say when it introduces itself?<br>
-    <em>"Slice to meet you!" 🍕😂</em>
-  </blockquote>
-
-  <p>Get more pizza ideas at <a href="https://kids.nationalgeographic.com/games/personality-quizzes/article/what-pizza-are-you" target="_blank">National Geographic Pizza Quiz</a>!</p>
-
+    <button type="submit">Send Message</button>
+  </form>
 </body>
 </html>
